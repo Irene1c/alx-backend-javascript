@@ -9,7 +9,7 @@ const countStudents = (path) => {
     // trim since CSV file can contain empty lines (at the end)
     const rows = data.trim().split('\n');
     const NUMBER_OF_STUDENTS = rows.length - 1;
-    console.log('Number of students:', NUMBER_OF_STUDENTS);
+    console.log(`Number of students: ${NUMBER_OF_STUDENTS}`);
 
     const parsedData = rows
       .slice(1)
